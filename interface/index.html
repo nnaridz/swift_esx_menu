@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="menus">
+        <div id="menu-default" class="menu-card">
+            <div class="menu-header">
+                <div class="menu-header-icon"><i class="fa-solid fa-bookmark"></i></div>
+                <div class="menu-header-text">
+                    <p id="default-title-top">&nbsp;</p>
+                    <p id="default-title-bottom">&nbsp;</p>
+                </div>
+            </div>
+            <div class="menu-items-wrapper">
+                <div class="scroll-indicator scroll-indicator-top"><i class="fa-solid fa-chevron-up"></i></div>
+                <div class="menu-items-list" id="default-items-container">
+                </div>
+                <div class="scroll-indicator scroll-indicator-bottom"><i class="fa-solid fa-chevron-down"></i></div>
+            </div>
+        </div>
+
+        <div class="center-menu-wrapper">
+            <div id="menu-list" class="menu-card">
+                <div class="menu-header">
+                    <div class="menu-header-icon"><i class="fa-solid fa-table-list"></i></div>
+                    <div class="menu-header-text">
+                        <p id="list-title-top">&nbsp;</p>
+                        <p id="list-title-bottom">&nbsp;</p>
+                    </div>
+                </div>
+                <div class="list-content-table">
+                    <table class="unified-table">
+                        <thead>
+                            <tr id="list-table-header">
+                            </tr>
+                        </thead>
+                        <tbody id="list-table-body">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div id="menu-dialog-overlay" class="dialog-overlay-backdrop">
+            <div id="menu-dialog" class="dialog-modal-card">
+                <button class="dialog-close-btn" id="dialog-close-icon-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <h2 class="dialog-modal-title" id="dialog-title-text">&nbsp;</h2>
+
+                <div class="dialog-input-container">
+                    <input type="text" id="dialog-input-field" placeholder="Enter amount or text here..." value="">
+                </div>
+
+                <div class="dialog-actions-footer">
+                    <button class="dialog-btn-pill dialog-btn-cancel" id="dialog-cancel-btn">Cancel</button>
+                    <button class="dialog-btn-pill dialog-btn-submit" id="dialog-submit-btn">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
